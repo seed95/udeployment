@@ -7,6 +7,8 @@ if [ -z "$DIR" ]; then
   DIR="./uniqcast"
 fi
 
+rm -r "$DIR"
+
 # Create the directory if it doesn't exist
 if [ ! -d "$DIR" ]; then
   mkdir -p "$DIR"
