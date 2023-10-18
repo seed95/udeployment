@@ -16,12 +16,12 @@ else
 fi
 
 # Install git
-echo "apt update"
+echo "Run apt update"
 sudo apt update
 
-echo "Setup git"
+echo "Setup git and repositories"
 ./git.sh $DIR
 
-# cd ${BACKEND_DEPLOYMENT_PATH}/backend_base;
-# docker-compose down &&
-# docker-compose up
+
+echo "Setup docker and docker-compose"
+./docker.sh
