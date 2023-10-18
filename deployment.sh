@@ -16,8 +16,14 @@ else
 fi
 
 # Install git
+echo "apt update"
 sudo apt update
+
+echo "Setup git"
 sudo apt install git
+git config --global url."ssh://git@bitbucket.org/".insteadOf "https://bitbucket.org/"
+
+
 
 # cd ${BACKEND_DEPLOYMENT_PATH}/backend_base;
 # docker-compose down &&
