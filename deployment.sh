@@ -20,10 +20,7 @@ echo "apt update"
 sudo apt update
 
 echo "Setup git"
-sudo apt install git
-git config --global url."ssh://git@bitbucket.org/".insteadOf "https://bitbucket.org/"
-
-
+./git.sh $DIR
 
 # cd ${BACKEND_DEPLOYMENT_PATH}/backend_base;
 # docker-compose down &&
